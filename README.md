@@ -14,7 +14,7 @@ Drone by MARS capable of autonomous navigation Repository for Drone by MARS, cap
 
 
 ## Flight Controller Schematic:
-![Image alt text](Media/sch.png?raw=true "Schematic")
+![Image alt text](Media/sch.PNG?raw=true "Schematic")
 
 ## ROS Packages:
 * [Robot package](#robot)
