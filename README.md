@@ -32,7 +32,8 @@ Drone by MARS capable of autonomous navigation Repository for Drone by MARS, cap
 * Command `roslaunch robot robot.launch` will launch the world with robot in a gazebo world (suitable for easier time with SLAM and navigation) and planning scene in RViz with TF, camera, robotmodel already set in it.
 
 
-### Simulation
+### Simulation Video
+Click on Image to play
 [![Watch the video](https://github.com/mars-tu/SkyLark/blob/main/Media/simulation.jpg)](https://drive.google.com/file/d/1lU4UtkTPGOdcDK2UvRqbzy2OsXT-8WxJ/view?usp=sharing)
 
 ### line_follower
