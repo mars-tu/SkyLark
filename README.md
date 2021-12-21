@@ -33,7 +33,7 @@ Drone by MARS capable of autonomous navigation Repository for Drone by MARS, cap
 
 
 ### Simulation
-[![Watch the video]](https://github.com/mars-tu/SkyLark/blob/main/Media/Mars-Drone%20Trim%20Trim-1.mp4)
+[![Watch the video]](https://drive.google.com/file/d/1lU4UtkTPGOdcDK2UvRqbzy2OsXT-8WxJ/view?usp=sharing)
 
 ### line_follower
 -----------------
