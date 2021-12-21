@@ -27,9 +27,26 @@ Drone by MARS capable of autonomous navigation Repository for Drone by MARS, cap
 
 ### Setup and launching the simulation environment:-
 
-* Clone the repo, build in your preferred system and source (`source devel/setup.bash`) the workspace
+* Clone the repo, build in your preferred system and add the following lines in your bashrc.
+```
+source ~/{name_of_workspace}/devel/setup.bash
 
-* Command `roslaunch robot robot.launch` will launch the world with robot in a gazebo world (suitable for easier time with SLAM and navigation) and planning scene in RViz with TF, camera, robotmodel already set in it.
+source ~/{name_of_workspace}/src/PX4-Autopilot/Tools/setup_gazebo.bash ~/{name_of_workspace}/src/PX4-Autopilot/ ~/{name_of_workspace}/src/PX4-Autopilot/build/px4_sitl_default >> /dev/null
+
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/{name_of_workspace}/src/PX4-Autopilot
+
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/{name_of_workspace}/src/PX4-Autopilot/Tools/sitl_gazebo
+
+```
+* For making gazebo work with PX-4 autopilot 
+```
+cd ~/{name_of_workspace}/src/PX4-Autopilot/
+make px4_sitl_default gazebo
+```
+
+* Command `roslaunch robot robot.launch` will launch the world with robot in a gazebo world (suitable for easier time with SLAM and navigation) and planning scene in RViz with TF, camera, robotmodel already set in it without PX-4 running in it.
+
+* Command `roslaunch flying_skylark flying_square.launch` will launch the gazebo world along with the PX-4 autopilot.
 
 
 ### Simulation Video
