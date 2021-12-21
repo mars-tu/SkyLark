@@ -15,7 +15,7 @@ Drone by MARS capable of autonomous navigation Repository for Drone by MARS, cap
 
 ## ROS Packages:
 * [Robot package](#robot)
-* [Line Follower package](#line_follower)
+* [Control Unit Navigation](#autonomus_drone)
 * [Navigation Stack package](#nav_stack)
 
 ### robot
