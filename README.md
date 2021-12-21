@@ -36,10 +36,8 @@ Drone by MARS capable of autonomous navigation Repository for Drone by MARS, cap
 Click on Image to play
 [![Watch the video](https://github.com/mars-tu/SkyLark/blob/main/Media/simulation.jpg)](https://drive.google.com/file/d/1lU4UtkTPGOdcDK2UvRqbzy2OsXT-8WxJ/view?usp=sharing)
 
-### line_follower
+### automatic movement
 -----------------
-* Contains node `line_follower` to follow a black line on a white background by using camera stream via `sensor_msgs` messages (No openCV).
-* `line_follower.launch` file launches the code for line following, but does not contain the LFR arena itself.
 ##### Steps to add arena given in repository or any other arena made by someone else.
 * Add the `models` folder to your gazebo path (one of the possible pre-set path is `/home/user/.gazebo/models`).
 * After gazebo environment is launched, add your arena from `insert` option and delete the existing ground plane.
@@ -53,11 +51,13 @@ Click on Image to play
 * C++14
 * python 2.x
 * Raspberry pi 3B (setup given below)
+* Eagle
+* PTC Creo
 #### Note: Hardware prerequisites mentioned in xyz section.
 
 ## Setup
 * [Raspi + OS setup](#setting-up-cpu)
-2)
+* Creo
 
 ### Setting Up CPU
 ------------------
