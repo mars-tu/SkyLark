@@ -7,7 +7,7 @@ Flaws in Iteration 1 are:
 2. There isn't enough space for electronics components.
 
 ## Analysis of Model 1:
-![Image alt text](IMG/analysis v1.PNG?raw=true "Drone frame 1 Analysis")
+![Image alt text](IMG/analysis_v1.PNG?raw=true "Drone frame 1 Analysis")
 
 ## ITERATION 2:
 
@@ -19,4 +19,4 @@ Flaws in Iteration 2 are:
 
 ## Analysis of Model 1:
 
-![Image alt text](IMG/analysis v2.PNG?raw=true "Drone frame 2 Analysis")
+![Image alt text](IMG/analysis_v2.PNG?raw=true "Drone frame 2 Analysis")
