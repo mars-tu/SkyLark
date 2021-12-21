@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# @name Generic Underwater Robot
+#
+# @type Underwater Robot
+# @class Underwater Robot
+#
+# @maintainer
+#
+# @board px4_fmu-v2 exclude
+# @board bitcraze_crazyflie exclude
+#
+
+. ${R}etc/init.d/rc.uuv_defaults
+
+# disable circuit breaker for airspeed sensor
+param set-default CBRK_AIRSPD_CHK 162128
+
+set MAV_TYPE 12
+param set MAV_TYPE ${MAV_TYPE}
+
+set MIXER uuv_x

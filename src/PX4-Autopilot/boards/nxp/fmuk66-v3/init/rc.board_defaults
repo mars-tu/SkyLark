@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# board specific defaults
+#------------------------------------------------------------------------------
+
+rgbled_pwm start
+safety_button start
+

@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Holybro Durandal V1 specific board defaults
+#------------------------------------------------------------------------------
+
+# Enable IMU thermal control
+param set-default SENS_EN_THERMAL 1

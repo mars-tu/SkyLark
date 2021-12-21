@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="frame_v2_asm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+ 
+
+ <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.1411" />
+      <inertia
+        ixx="9.5842E-05"
+        ixy="5.841E-09"
+        ixz="-2.8656E-09"
+        iyy="5.8076E-05"
+        iyz="1.0736E-06"
+        izz="0.00014791" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="3.2072E-07 0.0042783 -1.4373E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0017578" />
+      <inertia
+        ixx="2.4709E-08"
+        ixy="-1.4479E-12"
+        ixz="4.0373E-08"
+        iyy="1.3863E-06"
+        iyz="1.1197E-12"
+        izz="1.3791E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="Link_1">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <joint
+    name="Prop_1"
+    type="revolute">
+    <origin
+      xyz="-0.080221 -0.061832 0.008502"
+      rpy="1.5588 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+
+
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="3.2072E-07 0.0042783 -1.4373E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0017578" />
+      <inertia
+        ixx="2.4709E-08"
+        ixy="-1.4479E-12"
+        ixz="4.0373E-08"
+        iyy="1.3863E-06"
+        iyz="1.1197E-12"
+        izz="1.3791E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="Link_2">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+
+  <joint
+    name="Prop_2"
+    type="revolute">
+    <origin
+      xyz="0.075342 -0.061832 0.008502"
+      rpy="1.5588 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+
+
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="2.9874E-07 0.0042783 -1.4713E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0017578" />
+      <inertia
+        ixx="2.4709E-08"
+        ixy="-1.4714E-12"
+        ixz="4.0373E-08"
+        iyy="1.3863E-06"
+        iyz="1.1066E-12"
+        izz="1.3791E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="Link_3">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+
+  <joint
+    name="Prop_3"
+    type="revolute">
+    <origin
+      xyz="0.075342 0.079769 0.014502"
+      rpy="-1.5653 -0.01064 -2.0478" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+
+
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="-0.0024512 0.0087826 -0.0086882"
+        rpy="0 0 0" />
+      <mass
+        value="0.1411" />
+      <inertia
+        ixx="9.5842E-05"
+        ixy="5.841E-09"
+        ixz="-2.8656E-09"
+        iyy="5.8076E-05"
+        iyz="1.0736E-06"
+        izz="0.00014791" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flying_skylark/meshes/Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="Link_4">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <joint
+    name="Prop_4"
+    type="revolute">
+    <origin
+      xyz="-0.080221 0.079578 0.008502"
+      rpy="1.5828 4.3744E-05 3.1379" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+ <!--add lidar-->
+        <!-- <link name="hokuyo_link">
+          <pose>0 0 0 0 0 0</pose>
+          <collision name="collision">
+            <pose>0 0 0.3 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.1 0.1 0.1</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name="visual">
+            <pose>0 0 0.27 0 0 0</pose>
+            <geometry>
+              <mesh filename="package://flying_skylark/meshes/hokuyo.dae">
+              </mesh>
+            </geometry>
+          </visual>
+          <inertial>
+            <mass value="0.016"/>
+               low intertia necessary to avoid not disturb the drone
+            <inertia 
+               ixx="0.0001"
+               ixy="0"
+               ixz="0"
+               iyy="0.0001"
+               iyz="0"
+               izz="0.0001"
+            />
+          </inertial>
+          </link> -->
+
+    
+        <!-- <joint name="hokuyo_joint" type="fixed">
+          <pose>0 0 0 0 0 0</pose>
+          <parent link="base_link"/>
+          <child link="hokuyo_link"/>
+        </joint> -->
+</robot>
+
+
+
+
