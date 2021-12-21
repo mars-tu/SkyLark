@@ -10,7 +10,7 @@ Drone by MARS capable of autonomous navigation Repository for Drone by MARS, cap
 ## Electro-mechanical design:
 
 * Drone frame.
-![Image alt text](media/SkyLark.jpg?raw=true "Drone frame")
+![Image alt text](Media/Capture1-removebg-preview.png?raw=true "Drone frame")
 
 
 ## ROS Packages:
