@@ -1,11 +1,9 @@
 # SkyLark
-Drone by MARS capable of autonomous navigation Repository for Drone by MARS, capable of autonomous navigation, transfer of goods and  , thus minimizing human to human interaction.
+Repository of Drone named SkyLark by MARS capable of autonomous navigation for transfer of goods.
 
 ## Key Feature:-
 * Autonomous robot with payload to carry for multiple purposes which is capable to move on RC control.
-* Upgrading the RC control bot to control with hand with help of image processing technique with open CV.
-* Uses SLAM and navigation techniques like path processing to map/localize and fly preventing crashes from any obstacle.
-* Interaction with environment (lifts) and people via Iot protocols and UI mounted on the robot respectively (under work).
+* Manipulate flight by gesture recognition.
 
 ## Electro-mechanical design:
 
