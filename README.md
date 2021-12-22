@@ -4,6 +4,7 @@ Repository of Drone named SkyLark by MARS capable of autonomous navigation for t
 ## Key Feature:-
 * Autonomous robot with payload to carry for multiple purposes which is capable to move on RC control.
 * Manipulate flight by gesture recognition.
+* Runs on PX4 AutoPilot framework via ROS.
 
 ## Electro-mechanical design:
 
@@ -17,7 +18,6 @@ Repository of Drone named SkyLark by MARS capable of autonomous navigation for t
 ## ROS Packages:
 * [Robot package](#robot)
 * [Control Unit Navigation](#autonomus_drone)
-* [Navigation Stack package](#nav_stack)
 
 ### robot
 ------------------
@@ -51,14 +51,13 @@ make px4_sitl_default gazebo
 Click on Image to play
 [![Watch the video](https://github.com/mars-tu/SkyLark/blob/main/Media/simulation.jpg)](https://drive.google.com/file/d/1lU4UtkTPGOdcDK2UvRqbzy2OsXT-8WxJ/view?usp=sharing)
 
-### nav_stack
-------------------
-* This package contains all the files related to ros naviagtion stack used for our robot. 
-* Contains all costmaps and AMCL parameters.
 
 ## Prerequisites
 * C++14
 * python 2.x
+* PX4 AutoPilot
+* ROS Noetic
+* Embedded C
 * Raspberry pi 3B (setup given below)
 * Eagle
 * PTC Creo
