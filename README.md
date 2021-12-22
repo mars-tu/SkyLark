@@ -53,12 +53,6 @@ make px4_sitl_default gazebo
 Click on Image to play
 [![Watch the video](https://github.com/mars-tu/SkyLark/blob/main/Media/simulation.jpg)](https://drive.google.com/file/d/1lU4UtkTPGOdcDK2UvRqbzy2OsXT-8WxJ/view?usp=sharing)
 
-### automatic movement
------------------
-##### Steps to add arena given in repository or any other arena made by someone else.
-* Add the `models` folder to your gazebo path (one of the possible pre-set path is `/home/user/.gazebo/models`).
-* After gazebo environment is launched, add your arena from `insert` option and delete the existing ground plane.
-
 ### nav_stack
 ------------------
 * This package contains all the files related to ros naviagtion stack used for our robot. 
