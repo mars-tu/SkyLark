@@ -16,10 +16,9 @@ Repository of Drone named SkyLark by MARS capable of autonomous navigation for t
 ![Image alt text](Media/sch.PNG?raw=true "Schematic")
 
 ## ROS Packages:
-* [Robot package](#robot)
-* [Control Unit Navigation](#autonomus_drone)
+* [SkyLark package](#flying_skylark)
 
-### robot
+### flying_skylark
 ------------------
 * This package contains all the files related to robot and its configuration 
 
@@ -42,8 +41,6 @@ cd ~/{name_of_workspace}/src/PX4-Autopilot/
 make px4_sitl_default gazebo
 ```
 
-* Command `roslaunch robot robot.launch` will launch the world with robot in a gazebo world (suitable for easier time with SLAM and navigation) and planning scene in RViz with TF, camera, robotmodel already set in it without PX-4 running in it.
-
 * Command `roslaunch flying_skylark flying_square.launch` will launch the gazebo world along with the PX-4 autopilot.
 
 
@@ -65,7 +62,6 @@ Click on Image to play
 
 ## Setup
 * [Raspi + OS setup](#setting-up-cpu)
-* Creo
 
 ### Setting Up CPU
 ------------------
